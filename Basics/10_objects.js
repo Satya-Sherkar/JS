@@ -6,7 +6,7 @@ user.name = "satyam"
 user.email = "example@example.com"
 user.id ="123abc"
 
-console.log(user);
+// console.log(user);
 
 const regularUser = {
     fullName: {
@@ -18,7 +18,7 @@ const regularUser = {
 }
 
 //way to access object within object
-console.log(regularUser.fullName.mhStyle.lastname);
+// console.log(regularUser.fullName.mhStyle.lastname);
 
 // combining two objects
 obj1 = {1: "a", 2: "b"}
@@ -28,12 +28,22 @@ obj3 = {...obj1, ...obj2}   // separate each element and combine in a new object
 
 obj4 = Object.assign({},/*target*/obj1, obj2/*sources*/)
 
-console.log(obj3, obj4);
+// console.log(obj3, obj4);
 
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(Object.entries(user));
-console.log(user.hasOwnProperty('email'));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
+// console.log(user.hasOwnProperty('email'));
+
+const course = {
+    coursename: "JS Hindi",
+    price: 99,
+    CourseInstructor:"satyam"
+}
+
+const {CourseInstructor: instructor} = course
+
+console.log(instructor);
 
 
 
