@@ -12,3 +12,31 @@ function example(){
     console.log(b);
     console.log(c);
 }
+
+// scope in nested functions, if-statements, loops
+function one (){
+    const username = 'satyam';
+
+    function two() {
+        const website = 'Youtube';
+        console.log(username);
+    }
+    // console.log(website);  // can't be done 
+    
+    two()
+
+}
+
+one()
+
+// concept of hoisting
+
+addone(4)   
+function addone(num){
+    return num + 1;
+}
+
+addtwo(4) // can not be done ❌❌
+const addtwo = function(num){
+    return num + 2;
+}
